@@ -1,6 +1,5 @@
 import { Switch, Route } from "react-router-dom";
 import { Home } from "../Home";
-import { Page1 } from "../Page1";
 import { Page2 } from "../Page2";
 import { Page1DetailA } from "../Page1DetailA";
 import { Page1DetailB } from "../Page1DetailB";
@@ -18,8 +17,8 @@ export const Router = () => {
           return (
             <Switch>
               <Route exact path={url}>
+                {/* mapを使ってルーティングを書き出す */}
                 {page1Routes.map((route) => {
-                  console.log(`${url}${route.path}`);
                   return (
                     <Route
                       key={route.path}
