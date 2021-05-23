@@ -3,14 +3,14 @@ import { UrlParameter } from "../UrlParameter";
 
 //page1のルーティングに必要な情報が書いてあるオブジェクトを持つ配列を作成
 //ルーティングに必要なpath,exactが必要か，どのコンポーネントを出力するかをオブジェクトに持つ．
-export const page1Routes = [
+export const page2Routes = [
   {
     path: "/",
     exact: true,
     children: <Page2 />
   },
   {
-    path: "/:id",
+    path: "/:ids",
     exact: false,
     children: <UrlParameter />
   }
